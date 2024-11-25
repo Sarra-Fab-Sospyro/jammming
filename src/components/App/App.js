@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-
+import SearchBar from "../SearchBar/SearchBar";
 const App = () => {
-  
-	return (<div>
 
+	return (<div>
+      <SearchBar/>
   </div>);
 };
 

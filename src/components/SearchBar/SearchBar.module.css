@@ -1,0 +1,34 @@
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    max-height: 100vh;
+    padding-top: 3rem;
+}
+
+#searchBar {
+    padding: .5rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    margin: .2rem;
+    outline: 1px solid transparent;
+    transition: outline-color 0.5s ease-in-out,
+     border .5s ease-in-out, 
+     background-color .5s ease-in-out;
+}
+
+#searchBar:focus {
+    border-color: #48A43F;
+    outline-color: #48A43F;
+    background-color: #A206B7;
+    color: #b2ff86;
+}
+
+.button {
+    padding: .5rem 2rem;
+    border: 1px solid #15a103;
+    border-radius: 1rem;
+    background-color: #1227e97a;
+    color: #65adf0d2;
+    cursor: pointer;
+    font-weight: 400;
+}

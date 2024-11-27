@@ -2,7 +2,10 @@
     display: flex;
     justify-content: center;
     max-height: 100vh;
-    padding-top: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    color: rgb(3, 250, 139);
+    background-color: rgba(7, 3, 250, 0.25);
 }
 
 #searchBar {
@@ -11,24 +14,47 @@
     border-radius: 1rem;
     margin: .2rem;
     outline: 1px solid transparent;
+    background-color: #0566498e !important;
+    color: #b2ff86 !important;
     transition: outline-color 0.5s ease-in-out,
-     border .5s ease-in-out, 
-     background-color .5s ease-in-out;
+                border 0.5s ease-in-out,
+                background-color 1s ease-in-out; /* Transizione solo quando in focus */
 }
 
+#searchBar::placeholder {
+    color: rgba(178, 255, 134, 0.7);
+}
+
+/* Gestione dell'autofill */
+#searchBar:autofill,
+#searchBar:-webkit-autofill,
+#searchBar:-webkit-autofill:focus,
+#searchBar:-webkit-autofill:active {
+    background-color: #056649 !important;
+    color: #b2ff86 !important;
+    box-shadow: 0 0 0px 1000px #056649 inset !important;
+    -webkit-text-fill-color: #b2ff86 !important;
+    transition: background-color 5000000s ease-in-out 0s;
+}
+
+/* Quando l'input è in focus, mantieni la transizione */
 #searchBar:focus {
     border-color: #48A43F;
     outline-color: #48A43F;
-    background-color: #A206B7;
-    color: #b2ff86;
+    background-color: #056649 !important;
 }
+
 
 .button {
     padding: .5rem 2rem;
-    border: 1px solid #15a103;
+    border: 1px solid rgba(18, 196, 117);
     border-radius: 1rem;
-    background-color: #1227e97a;
-    color: #65adf0d2;
+    background-color: #056649;
+    color: rgb(3, 250, 139);
     cursor: pointer;
     font-weight: 400;
+}
+
+.field {
+    margin: .5rem;
 }

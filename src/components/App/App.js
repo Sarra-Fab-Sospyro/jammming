@@ -6,21 +6,21 @@ import styles from "./App.module.css";
 const App = () => {
 	const [tracklist, setTracklist] = useState([
 		{
-			title: "Song Title",
+			name: "Song name",
 			artist: "Artist Name",
 			album: "Album Name",
 			id: "1",
 			img: "/assets/Mic drop-bro.svg",
 		},
 		{
-			title: "Song Title",
+			name: "Song name",
 			artist: "Artist Name",
 			album: "Album Name",
 			id: "2",
 			img: "/assets/Mic drop-bro.svg",
 		},
 		{
-			title: "Song Title",
+			name: "Song name",
 			artist: "Artist Name",
 			album: "Album Name",
 			id: "3",

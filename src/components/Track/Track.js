@@ -11,7 +11,7 @@ const Track = ({ track }) => {
 				<img className={styles.image} src={track.img} alt="track's img" />
 				<div className={styles.container}>
 					<h1>
-						<b>{track.title}</b>
+						<b>{track.name}</b>
 					</h1>
 					<h3>
 						<em>{track.album}</em>

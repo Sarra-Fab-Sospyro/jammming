@@ -1,0 +1,13 @@
+.tracklist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* Consente alle card di andare a capo su più righe */
+    justify-content: center; /* Centra le card */
+    align-items: center;
+    gap: 20px; /* Spaziatura tra le card */
+    padding: 20px; /* Spaziatura interna */
+}
+
+.listItem {
+    list-style: none; /* Rimuove i puntini dai <li> */
+}

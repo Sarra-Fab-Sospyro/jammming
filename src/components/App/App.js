@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
-import Track from "../Track/Track";
 import Tracklist from "../Tracklist/Tracklist";
 import styles from "./App.module.css";
 const App = () => {

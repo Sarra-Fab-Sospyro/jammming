@@ -1,0 +1,58 @@
+.containerPlayList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Consente alle card di andare a capo su più righe */
+    justify-content: center;
+    /* Centra le card */
+    align-items: center;
+    gap: 20px;
+    /* Spaziatura tra le card */
+    padding: 20px;
+    /* Spaziatura interna */
+    border: 2px solid rgba(228, 214, 214, 0.5);
+    margin: 1rem;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    background-color: hsl(180, 100%, 50%, .8);
+    border-radius: 1rem;
+}
+
+.button {
+    background-color: rgb(20 172 72 / 80%);
+    color: rgb(146 227 169);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 25%;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsla(141, 79%, 38%, 1);
+    color: rgb(0, 255, 72);
+    border-radius: 50%;
+    transition: border-radius 0.2s ease-in-out;
+}
+
+.button:active {
+    background-color: rgb(13, 100, 44);
+}
+
+.image {
+    width: 25%;
+    height: auto;
+}
+
+.containerPlayList>h1 {
+    color: #ffffff;
+    background-color: black;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+}

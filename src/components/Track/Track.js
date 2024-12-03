@@ -11,13 +11,12 @@ const Track = ({ track }) => {
 				<img className={styles.image} src={track.img} alt="track's img" />
 				<div className={styles.container}>
 					<h1>
-						<b>{track.name}</b>
+						{track.name}
 					</h1>
 					<h3>
 						<em>{track.album}</em>
 					</h3>
 					<p>by {track.artist}</p>
-					<p>ID: {track.id}</p>
 				</div>
 			</div>
 		</>

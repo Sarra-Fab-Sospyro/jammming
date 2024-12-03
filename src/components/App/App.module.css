@@ -1,8 +1,15 @@
-.main{
-    background-image:linear-gradient(0deg,rgba(164, 57, 180, 0.70), rgba(18, 196, 117, .70), rgba(20, 87, 211, 0.70)), url('../../../public/assets/background-spotify-api.jpg');
+.main {
+    background-image: linear-gradient(0deg, rgba(164, 57, 180, 0.70), rgba(18, 196, 117, .70), rgba(20, 87, 211, 0.70)), url('../../../public/assets/background-spotify-api.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
+    background-size: 100vw, auto;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Due colonne uguali */
+    align-items: start;
+    /* Allinea gli elementi delle colonne in alto */
+    gap: 1rem;
+    /* Spaziatura tra le colonne */
+}
